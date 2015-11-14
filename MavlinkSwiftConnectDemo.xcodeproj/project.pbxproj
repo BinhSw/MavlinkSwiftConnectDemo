@@ -14,6 +14,12 @@
 		27AD8A2C1BBD515F00BC7555 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AD8A2B1BBD515F00BC7555 /* ORSSerial.framework */; };
 		27AD8A2D1BBD515F00BC7555 /* ORSSerial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27AD8A2B1BBD515F00BC7555 /* ORSSerial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27AD8A341BBD551300BC7555 /* ORSSerial.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27AD8A331BBD551300BC7555 /* ORSSerial.framework.dSYM */; };
+		27B17B0E1BF74565006557AD /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B17B0B1BF74565006557AD /* ReactiveCocoa.framework */; };
+		27B17B0F1BF74565006557AD /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27B17B0B1BF74565006557AD /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27B17B101BF74565006557AD /* ReactiveMavlink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B17B0C1BF74565006557AD /* ReactiveMavlink.framework */; };
+		27B17B111BF74565006557AD /* ReactiveMavlink.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27B17B0C1BF74565006557AD /* ReactiveMavlink.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27B17B121BF74565006557AD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B17B0D1BF74565006557AD /* Result.framework */; };
+		27B17B131BF74565006557AD /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27B17B0D1BF74565006557AD /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +29,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				27B17B111BF74565006557AD /* ReactiveMavlink.framework in Embed Frameworks */,
 				27AD8A2D1BBD515F00BC7555 /* ORSSerial.framework in Embed Frameworks */,
+				27B17B0F1BF74565006557AD /* ReactiveCocoa.framework in Embed Frameworks */,
+				27B17B131BF74565006557AD /* Result.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +61,9 @@
 		279D1D671BC292C3003CB64E /* MavlinkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MavlinkController.swift; path = Sources/MavlinkController.swift; sourceTree = SOURCE_ROOT; };
 		27AD8A2B1BBD515F00BC7555 /* ORSSerial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ORSSerial.framework; path = Carthage/Build/Mac/ORSSerial.framework; sourceTree = "<group>"; };
 		27AD8A331BBD551300BC7555 /* ORSSerial.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ORSSerial.framework.dSYM; path = Carthage/Build/Mac/ORSSerial.framework.dSYM; sourceTree = "<group>"; };
+		27B17B0B1BF74565006557AD /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		27B17B0C1BF74565006557AD /* ReactiveMavlink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMavlink.framework; path = Carthage/Build/Mac/ReactiveMavlink.framework; sourceTree = "<group>"; };
+		27B17B0D1BF74565006557AD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		27B6CBE31BBC12BA004184A5 /* MavlinkSwiftConnectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MavlinkSwiftConnectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -60,7 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B17B101BF74565006557AD /* ReactiveMavlink.framework in Frameworks */,
 				27AD8A2C1BBD515F00BC7555 /* ORSSerial.framework in Frameworks */,
+				27B17B0E1BF74565006557AD /* ReactiveCocoa.framework in Frameworks */,
+				27B17B121BF74565006557AD /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +95,9 @@
 		27AD8A321BBD542B00BC7555 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27B17B0B1BF74565006557AD /* ReactiveCocoa.framework */,
+				27B17B0C1BF74565006557AD /* ReactiveMavlink.framework */,
+				27B17B0D1BF74565006557AD /* Result.framework */,
 				27AD8A2B1BBD515F00BC7555 /* ORSSerial.framework */,
 				27AD8A331BBD551300BC7555 /* ORSSerial.framework.dSYM */,
 			);
