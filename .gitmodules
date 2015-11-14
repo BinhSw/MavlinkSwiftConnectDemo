@@ -4,3 +4,9 @@
 [submodule "Vendor/Mavlink"]
 	path = Vendor/Mavlink
 	url = https://github.com/mavlink/c_library.git
+[submodule "Carthage/Checkouts/Result"]
+	url = https://github.com/antitypical/Result.git
+[submodule "Carthage/Checkouts/ReactiveCocoa"]
+	url = https://github.com/ReactiveCocoa/ReactiveCocoa.git
+[submodule "Carthage/Checkouts/ReactiveMavlink"]
+	url = https://github.com/kouky/ReactiveMavlink.git
