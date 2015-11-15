@@ -1,2 +1,2 @@
 github "armadsen/ORSSerialPort"
-github "kouky/ReactiveMavlink" == 0.1.0
+github "kouky/ReactiveMavlink" ~> 0.2
