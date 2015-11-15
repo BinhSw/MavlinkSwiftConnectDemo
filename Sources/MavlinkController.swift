@@ -51,6 +51,17 @@ class MavlinkController: NSObject {
             self?.receivedMessageTextView.textStorage?.mutableString.appendString("HEARTBEAT\n")
             self?.receivedMessageTextView.needsDisplay = true
         }
+        
+        reactiveMavlink.attitude.observeNext { [weak self] attitude in
+            self?.receivedMessageTextView.textStorage?.mutableString.appendString("ATTITUDE roll: \(attitude.roll) pitch: \(attitude.pitch) yaw: \(attitude.yaw)\n")
+            self?.receivedMessageTextView.needsDisplay = true
+        }
+
+        reactiveMavlink.unidentified.observeNext { [weak self] message in
+            self?.receivedMessageTextView.textStorage?.mutableString.appendString("UNIDENTIFIED msg id \(message.id)\n")
+            self?.receivedMessageTextView.needsDisplay = true
+        }
+
     }
     
     deinit {
