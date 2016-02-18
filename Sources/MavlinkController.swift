@@ -57,11 +57,15 @@ class MavlinkController: NSObject {
             self?.receivedMessageTextView.needsDisplay = true
         }
 
+        reactiveMavlink.headUpDisplay.observeNext { [weak self] hud in
+            self?.receivedMessageTextView.textStorage?.mutableString.appendString("HUD altitude: \(hud.altitude) airSpeed: \(hud.airSpeed) heading: \(hud.heading)\n")
+            self?.receivedMessageTextView.needsDisplay = true
+        }
+
         reactiveMavlink.unidentified.observeNext { [weak self] message in
             self?.receivedMessageTextView.textStorage?.mutableString.appendString("UNIDENTIFIED msg id \(message.id)\n")
             self?.receivedMessageTextView.needsDisplay = true
         }
-
     }
     
     deinit {
